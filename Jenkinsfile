@@ -18,11 +18,13 @@ pipeline
         { 
             steps { withMaven(jdk: 'JDK_HOME', maven: 'MVN_HOME') 
                  {sh 'mvn test'}
+                  }
 
 }
             
 
         }
+}
 
 
 
