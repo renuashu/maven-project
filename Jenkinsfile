@@ -20,13 +20,7 @@ pipeline
                  {sh 'mvn test'}
 
 }
-             stage('please build code') 
-        { 
-            steps { withMaven(jdk: 'JDK_HOME', maven: 'MVN_HOME') 
-                 {sh 'mvn package'}
-                  }
-
-}
+            
 
         }
 
